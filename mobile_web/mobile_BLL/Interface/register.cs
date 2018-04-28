@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TBSoft.Base.Common.BaseCode;
 
 
 namespace mobile_BLL.Interface
@@ -29,13 +30,11 @@ namespace mobile_BLL.Interface
             catch { account = ""; }
             string pwd = "";
             try { pwd = (string)optdatas["pwd"]; }
-            catch { account = ""; }
+            catch { pwd = ""; }
             string textcode = "";
             try { textcode = (string)optdatas["textcode"]; }
             catch { textcode = ""; }
-            string status = "";
-            try { status = (string)optdatas["status"]; }
-            catch { status = ""; }
+            
             JsonData js = new JsonData();
             string message = "";
             AddJsonProperty("userinfo", ref js); 
@@ -46,37 +45,39 @@ namespace mobile_BLL.Interface
                 if (dt.Rows.Count > 0)
                 {
                     if (dt.Rows[0]["code"].ToString() == textcode)
-                    {
-                      
-                        if (status == "0")
-                        { 
+                    {                                          
                               var dt_user = tdal.get_baseuser_where(" and UserAccount='" + account + "' ");
                               if (dt_user.Rows.Count <= 0)
                               {
-
                                   Dictionary<string, string> dic = new Dictionary<string, string>();
                                   dic.Add("UserAccount", account);
                                   dic.Add("Password", BaseDal.MD5Encrype(pwd));
                                   dic.Add("UserId", DateTime.Now.ToFileTime().ToString());
-                                 int useid= BaseDal.InsertToTables("BaseUser", dic);
+                                  int useid= BaseDal.InsertToTables("BaseUser", dic);
+                                  string token= CommonHelper.GetGuid;
+                                  Dictionary<string, string> dic1 = new Dictionary<string, string>();
+                                  dic1.Add("userid", useid.ToString());
+                                  dic1.Add("accesstoken", token);
+                                  BaseDal.InsertToTables("user_accesstoken", dic1);
+                                  var dt_user2 = tdal.get_baseuser_where(" and UserAccount='" + account + "' ");
+                                  dt_user2.Columns.Add("token");
+                                  dt_user2.Rows[0]["token"] = token;
                                   i = 1;
-                                  message = "注册成功";
-
-                                  js["userinfo"] = DataTableToJson(dt_user);
+                                  message = "登录成功";
+                                  js["userinfo"] = DataTableToJson(dt_user2);
                               }
                               else {
                                   i = 1;
-                                  message = "此手机已被注册";
-                              }
-                        }
-                        else {
-                            Dictionary<string, string> dic = new Dictionary<string, string>(); 
-                            dic.Add("Password", BaseDal.MD5Encrype(pwd));
-                            BaseDal.UpdateTables("BaseUser", dic, "UserAccount='"+account+"'");
-                            i = 1;
-                            message = "修改成功";
-                        }
-                      
+                                  string token = CommonHelper.GetGuid;
+                                  Dictionary<string, string> dic1 = new Dictionary<string, string>();
+                                  dic1.Add("userid", dt_user.Rows[0]["id"].ToString());
+                                  dic1.Add("accesstoken", token);
+                                  BaseDal.InsertToTables("user_accesstoken", dic1);
+                                  dt_user.Columns.Add("token");
+                                  dt_user.Rows[0]["token"] = token;
+                                  js["userinfo"] = DataTableToJson(dt_user);
+                                  message = "登录成功";
+                              }                                       
                     }
                     else
                     {

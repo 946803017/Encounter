@@ -4,3 +4,9 @@ J:\MySpace\mobile_web\mobile_Model\bin\Debug\mobile_Model.pdb
 J:\MySpace\mobile_web\mobile_Model\obj\Debug\mobile_Model.csprojResolveAssemblyReference.cache
 J:\MySpace\mobile_web\mobile_Model\obj\Debug\mobile_Model.exe
 J:\MySpace\mobile_web\mobile_Model\obj\Debug\mobile_Model.pdb
+J:\MySpace\Encounter\mobile_web\mobile_Model\bin\Debug\mobile_Model.exe.config
+J:\MySpace\Encounter\mobile_web\mobile_Model\bin\Debug\mobile_Model.exe
+J:\MySpace\Encounter\mobile_web\mobile_Model\bin\Debug\mobile_Model.pdb
+J:\MySpace\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.csprojResolveAssemblyReference.cache
+J:\MySpace\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.exe
+J:\MySpace\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.pdb

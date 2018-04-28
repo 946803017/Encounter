@@ -28,6 +28,8 @@ namespace mobile_DAL.Interface
             return QueryDataTable(strSql, dic);
         }
 
+    
+
         public DataTable get_baseuser(string userid)
         {
                 string sql = "select *  from BaseUser where userid ='" + userid + " '";
