@@ -91,16 +91,6 @@
     <Content Include="Account\Login.html" />
     <Content Include="Account\register.html" />
     <Content Include="Account\retrieve_pwd.html" />
-    <Content Include="Frame\add_biji.aspx" />
-    <Content Include="Frame\biji.aspx" />
-    <Content Include="Frame\danci_my.aspx" />
-    <Content Include="Frame\get_jibi_list.aspx" />
-    <Content Include="Frame\index_m.aspx" />
-    <Content Include="Frame\my_center.aspx" />
-    <Content Include="Frame\my_data.aspx" />
-    <Content Include="Frame\my_info.aspx" />
-    <Content Include="Frame\noet_info.aspx" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="index.html" />
     <Content Include="Interface\WeChatConnection.js" />
     <Content Include="js\95516.js" />
@@ -142,69 +132,6 @@
     <Compile Include="Account\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frame\add_biji.aspx.cs">
-      <DependentUpon>add_biji.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\add_biji.aspx.designer.cs">
-      <DependentUpon>add_biji.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\biji.aspx.cs">
-      <DependentUpon>biji.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\biji.aspx.designer.cs">
-      <DependentUpon>biji.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\danci_my.aspx.cs">
-      <DependentUpon>danci_my.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\danci_my.aspx.designer.cs">
-      <DependentUpon>danci_my.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\get_jibi_list.aspx.cs">
-      <DependentUpon>get_jibi_list.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\get_jibi_list.aspx.designer.cs">
-      <DependentUpon>get_jibi_list.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\index_m.aspx.cs">
-      <DependentUpon>index_m.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\index_m.aspx.designer.cs">
-      <DependentUpon>index_m.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\my_center.aspx.cs">
-      <DependentUpon>my_center.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\my_center.aspx.designer.cs">
-      <DependentUpon>my_center.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\my_data.aspx.cs">
-      <DependentUpon>my_data.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\my_data.aspx.designer.cs">
-      <DependentUpon>my_data.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\my_info.aspx.cs">
-      <DependentUpon>my_info.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\my_info.aspx.designer.cs">
-      <DependentUpon>my_info.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Frame\noet_info.aspx.cs">
-      <DependentUpon>noet_info.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Frame\noet_info.aspx.designer.cs">
-      <DependentUpon>noet_info.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Interface\get_data.ashx.cs">
       <DependentUpon>get_data.ashx</DependentUpon>
     </Compile>
@@ -227,6 +154,7 @@
   <ItemGroup>
     <Folder Include="css\" />
     <Folder Include="font\" />
+    <Folder Include="Frame\" />
     <Folder Include="img\" />
   </ItemGroup>
   <ItemGroup>
