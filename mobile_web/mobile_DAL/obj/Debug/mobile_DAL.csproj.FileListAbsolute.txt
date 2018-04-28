@@ -1,0 +1,6 @@
+J:\MySpace\mobile_web\mobile_DAL\bin\Debug\mobile_DAL.exe.config
+J:\MySpace\mobile_web\mobile_DAL\bin\Debug\mobile_DAL.exe
+J:\MySpace\mobile_web\mobile_DAL\bin\Debug\mobile_DAL.pdb
+J:\MySpace\mobile_web\mobile_DAL\obj\Debug\mobile_DAL.csprojResolveAssemblyReference.cache
+J:\MySpace\mobile_web\mobile_DAL\obj\Debug\mobile_DAL.exe
+J:\MySpace\mobile_web\mobile_DAL\obj\Debug\mobile_DAL.pdb

@@ -1,0 +1,9 @@
+J:\MySpace\mobile_web\mobile_BLL\bin\Debug\mobile_BLL.exe.config
+J:\MySpace\mobile_web\mobile_BLL\bin\Debug\mobile_BLL.exe
+J:\MySpace\mobile_web\mobile_BLL\bin\Debug\mobile_BLL.pdb
+J:\MySpace\mobile_web\mobile_BLL\bin\Debug\mobile_DAL.exe
+J:\MySpace\mobile_web\mobile_BLL\bin\Debug\TBSoft.Base.Common.dll
+J:\MySpace\mobile_web\mobile_BLL\bin\Debug\mobile_DAL.pdb
+J:\MySpace\mobile_web\mobile_BLL\obj\Debug\mobile_BLL.csprojResolveAssemblyReference.cache
+J:\MySpace\mobile_web\mobile_BLL\obj\Debug\mobile_BLL.exe
+J:\MySpace\mobile_web\mobile_BLL\obj\Debug\mobile_BLL.pdb

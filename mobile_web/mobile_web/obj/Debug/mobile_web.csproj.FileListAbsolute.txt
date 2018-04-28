@@ -1,0 +1,11 @@
+J:\MySpace\mobile_web\mobile_web\bin\mobile_web.dll.config
+J:\MySpace\mobile_web\mobile_web\bin\mobile_web.dll
+J:\MySpace\mobile_web\mobile_web\bin\mobile_web.pdb
+J:\MySpace\mobile_web\mobile_web\bin\mobile_BLL.exe
+J:\MySpace\mobile_web\mobile_web\bin\mobile_DAL.exe
+J:\MySpace\mobile_web\mobile_web\bin\Newtonsoft.Json.dll
+J:\MySpace\mobile_web\mobile_web\bin\mobile_BLL.pdb
+J:\MySpace\mobile_web\mobile_web\bin\mobile_DAL.pdb
+J:\MySpace\mobile_web\mobile_web\obj\Debug\mobile_web.csprojResolveAssemblyReference.cache
+J:\MySpace\mobile_web\mobile_web\obj\Debug\mobile_web.dll
+J:\MySpace\mobile_web\mobile_web\obj\Debug\mobile_web.pdb

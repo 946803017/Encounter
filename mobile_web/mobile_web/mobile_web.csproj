@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{859936A5-02ED-4542-B8DF-7AC514B7B37D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mobile_web</RootNamespace>
+    <AssemblyName>mobile_web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LitJson, Version=2.3.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TBSoft.Base.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TBSoft.Base.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="TBSoft.Base.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TBSoft.Base.Common.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="TBSoft.Base.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TBSoft.Base.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="TBSoft.Base.Model, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TBSoft.Base.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="TBSoft.Base.WebUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TBSoft.Base.WebUI.dll</HintPath>
+    </Reference>
+    <Reference Include="TBSoft.Code, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TBSoft.Code.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\index.aspx" />
+    <Content Include="Account\Login.html" />
+    <Content Include="Account\register.html" />
+    <Content Include="Account\retrieve_pwd.html" />
+    <Content Include="Frame\add_biji.aspx" />
+    <Content Include="Frame\biji.aspx" />
+    <Content Include="Frame\danci_my.aspx" />
+    <Content Include="Frame\get_jibi_list.aspx" />
+    <Content Include="Frame\index_m.aspx" />
+    <Content Include="Frame\my_center.aspx" />
+    <Content Include="Frame\my_data.aspx" />
+    <Content Include="Frame\my_info.aspx" />
+    <Content Include="Frame\noet_info.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="index.html" />
+    <Content Include="Interface\WeChatConnection.js" />
+    <Content Include="js\95516.js" />
+    <Content Include="js\ad.js" />
+    <Content Include="js\arttmpl.js" />
+    <Content Include="js\beecloud.js" />
+    <Content Include="js\city.data-3.js" />
+    <Content Include="js\city.data.js" />
+    <Content Include="js\feedback.js" />
+    <Content Include="js\mui.dtpicker.js" />
+    <Content Include="js\mui.imageViewer.js" />
+    <Content Include="js\mui.indexedlist.js" />
+    <Content Include="js\mui.js" />
+    <Content Include="js\mui.lazyload.img.js" />
+    <Content Include="js\mui.lazyload.js" />
+    <Content Include="js\mui.listpicker.js" />
+    <Content Include="js\mui.locker.js" />
+    <Content Include="js\mui.min.js" />
+    <Content Include="js\mui.picker.all.js" />
+    <Content Include="js\mui.picker.js" />
+    <Content Include="js\mui.picker.min.js" />
+    <Content Include="js\mui.poppicker.js" />
+    <Content Include="js\mui.previewimage.js" />
+    <Content Include="js\mui.pullToRefresh.js" />
+    <Content Include="js\mui.pullToRefresh.material.js" />
+    <Content Include="js\mui.view.js" />
+    <Content Include="js\mui.zoom.js" />
+    <Content Include="js\update.js" />
+    <Content Include="js\webviewGroup.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\add_biji.aspx.cs">
+      <DependentUpon>add_biji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\add_biji.aspx.designer.cs">
+      <DependentUpon>add_biji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\biji.aspx.cs">
+      <DependentUpon>biji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\biji.aspx.designer.cs">
+      <DependentUpon>biji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\danci_my.aspx.cs">
+      <DependentUpon>danci_my.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\danci_my.aspx.designer.cs">
+      <DependentUpon>danci_my.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\get_jibi_list.aspx.cs">
+      <DependentUpon>get_jibi_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\get_jibi_list.aspx.designer.cs">
+      <DependentUpon>get_jibi_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\index_m.aspx.cs">
+      <DependentUpon>index_m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\index_m.aspx.designer.cs">
+      <DependentUpon>index_m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\my_center.aspx.cs">
+      <DependentUpon>my_center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\my_center.aspx.designer.cs">
+      <DependentUpon>my_center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\my_data.aspx.cs">
+      <DependentUpon>my_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\my_data.aspx.designer.cs">
+      <DependentUpon>my_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\my_info.aspx.cs">
+      <DependentUpon>my_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\my_info.aspx.designer.cs">
+      <DependentUpon>my_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\noet_info.aspx.cs">
+      <DependentUpon>noet_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\noet_info.aspx.designer.cs">
+      <DependentUpon>noet_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\get_data.ashx.cs">
+      <DependentUpon>get_data.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ip_rsa_mac.cs" />
+    <Compile Include="Interface\verify_data.ashx.cs">
+      <DependentUpon>verify_data.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interface\get_data.ashx" />
+    <Content Include="Interface\verify_data.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="font\" />
+    <Folder Include="img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mobile_BLL\mobile_BLL.csproj">
+      <Project>{d3b4588a-ea72-4826-ac70-a1a823457e41}</Project>
+      <Name>mobile_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mobile_DAL\mobile_DAL.csproj">
+      <Project>{3f893cca-00b5-4aa2-9481-e03a784320e3}</Project>
+      <Name>mobile_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25402</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25402/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

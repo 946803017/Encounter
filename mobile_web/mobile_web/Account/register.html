@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0074)http://www.17sucai.com/preview/622817/2016-12-15/app_demo/newPassword.html -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="height=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>注册</title>
+     
+          <link rel="stylesheet" href="register_files/common.css">
+          <link rel="stylesheet" href="register_files/register.css">
+    <style>
+        .message{
+            background: none;
+            padding-top: 10%;
+        }
+        .message input {
+            width: 83%;
+            margin: 0 4%;
+        }
+        .content form input:not(:nth-child(6)) {
+            border: 0;
+            margin-bottom: 8%;
+        }
+        .message .icons b{
+            top: 14.5%;
+            left: 11%;
+        }
+        .message .icons b:nth-child(2){
+            top: 37%;
+            left: 10%;
+        }
+        .message .icons b:nth-child(3){
+            top: 60%;
+        }
+        .message .icons b:nth-child(4){
+            top: 82%;
+        }
+        .code{
+            top: 33.475%;
+            right: 7.5%;
+            background: #21a9f5;
+            color: #ffffff;
+            padding: 3.635% 5%;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="mui-content">
+        <div class="register">
+            <div class="content">
+                <form action="">
+                    <div class="message">
+                        <input type="tel" placeholder="输入手机号" id="accouts" style="width:93%" pattern="[0-9]{11}" required="">
+                        <input type="text" style="width:50%" id="txtcode" placeholder="输入验证码" required="">
+                        <input type="password" id="pwds" placeholder="请输入新密码" style="width:93%" required="">
+                        <input type="password" id="pwdss" placeholder="请再次输入密码" style="width:93%" required="">
+                        <div class="icons">
+                            <b><img src="register_files/zc-1.jpg" alt=""></b>
+                            <b><img src="register_files/zc-2.jpg" alt=""></b>
+                            <b><img src="register_files/zc-3.jpg" alt=""></b>
+                            <b><img src="register_files/zc-3.jpg" alt=""></b>
+                        </div>
+                        <button class="code" style="width:39%" id="codess" onclick="getcode();">获取验证码</button>
+                    </div>
+                    <button class="submit" type="button" onclick="zhuce()">立即注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/jquery-1.8.3.js"></script>
+<script src="../js/mui.min.js"></script>
+<script src="../Interface/WeChatConnection.js"></script>
+
+<script type="text/javascript">
+  
+    var InterValObj; //timer变量，控制时间 
+    var count = 30; //间隔函数，1秒执行 
+    var curCount;//当前剩余秒数 
+
+    function getcode() {
+        if ($("#accouts").val() == "") {
+            mui.toast('请输入手机号');
+        } else {
+            curCount = count;
+            //设置button效果，开始计时 
+            $("#codess").attr("disabled", "true");
+            $("#codess").html(curCount + "秒后可重新发送");
+            InterValObj = window.setInterval(SetRemainTime, 1000);
+            get_zhuce_code($("#accouts").val());
+        }
+    }
+   
+
+    function zhuce()
+    {
+        if ($("#pwds").val() != $("#pwdss").val())
+        {
+           
+            mui.toast('两次密码输入密码不对');
+            return;
+        }
+
+    get_zhuce_zhongzhi($("#accouts").val(), $("#pwds").val(), $("#txtcode").val(), "0");
+    }
+   
+</script>
