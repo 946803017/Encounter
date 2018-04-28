@@ -10,3 +10,9 @@ J:\MySpace\Encounter\mobile_web\mobile_Model\bin\Debug\mobile_Model.pdb
 J:\MySpace\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.csprojResolveAssemblyReference.cache
 J:\MySpace\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.exe
 J:\MySpace\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.pdb
+F:\Encounter\mobile_web\mobile_Model\bin\Debug\mobile_Model.exe.config
+F:\Encounter\mobile_web\mobile_Model\bin\Debug\mobile_Model.exe
+F:\Encounter\mobile_web\mobile_Model\bin\Debug\mobile_Model.pdb
+F:\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.csprojResolveAssemblyReference.cache
+F:\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.exe
+F:\Encounter\mobile_web\mobile_Model\obj\Debug\mobile_Model.pdb

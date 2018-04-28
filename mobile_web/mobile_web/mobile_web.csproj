@@ -87,10 +87,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\index.aspx" />
-    <Content Include="Account\Login.html" />
-    <Content Include="Account\register.html" />
-    <Content Include="Account\retrieve_pwd.html" />
     <Content Include="index.html" />
     <Content Include="Interface\WeChatConnection.js" />
     <Content Include="js\95516.js" />
@@ -125,13 +121,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Interface\get_data.ashx.cs">
       <DependentUpon>get_data.ashx</DependentUpon>
     </Compile>
@@ -152,6 +141,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Account\" />
     <Folder Include="css\" />
     <Folder Include="font\" />
     <Folder Include="Frame\" />

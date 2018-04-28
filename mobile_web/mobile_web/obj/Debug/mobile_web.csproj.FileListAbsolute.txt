@@ -20,3 +20,14 @@ J:\MySpace\Encounter\mobile_web\mobile_web\bin\mobile_DAL.pdb
 J:\MySpace\Encounter\mobile_web\mobile_web\obj\Debug\mobile_web.csprojResolveAssemblyReference.cache
 J:\MySpace\Encounter\mobile_web\mobile_web\obj\Debug\mobile_web.dll
 J:\MySpace\Encounter\mobile_web\mobile_web\obj\Debug\mobile_web.pdb
+F:\Encounter\mobile_web\mobile_web\bin\mobile_web.dll.config
+F:\Encounter\mobile_web\mobile_web\bin\mobile_web.dll
+F:\Encounter\mobile_web\mobile_web\bin\mobile_web.pdb
+F:\Encounter\mobile_web\mobile_web\bin\mobile_BLL.exe
+F:\Encounter\mobile_web\mobile_web\bin\mobile_DAL.exe
+F:\Encounter\mobile_web\mobile_web\bin\Newtonsoft.Json.dll
+F:\Encounter\mobile_web\mobile_web\bin\mobile_BLL.pdb
+F:\Encounter\mobile_web\mobile_web\bin\mobile_DAL.pdb
+F:\Encounter\mobile_web\mobile_web\obj\Debug\mobile_web.csprojResolveAssemblyReference.cache
+F:\Encounter\mobile_web\mobile_web\obj\Debug\mobile_web.dll
+F:\Encounter\mobile_web\mobile_web\obj\Debug\mobile_web.pdb
